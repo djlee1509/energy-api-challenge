@@ -10,6 +10,8 @@
 
 * Built with Flask.
 
+* For reference, I have used the dummy data which is available under "data" folder in this repository. Created .csv file manually then, converted to JSON file using "convert.py" script I have written.
+
 
 <h3>Requirements</h3>
 
