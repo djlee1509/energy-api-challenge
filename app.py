@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 import json
 
 
@@ -13,11 +13,18 @@ with open(JSON_FILE_PATH) as f:
 @app.route("/api/pv_yield")
 def get_energy_data():
   param_state = request.args.get("state")
+  param_capacity = request.args.get("capacity")
 
   for x in data:
     if x['state'] == param_state:
+      x['yield'] = x['yield'] * int(param_capacity)
       output_dict = x
       output_json = json.dumps(output_dict)
+      break
+
+    else:
+      output_json = jsonify(error="Please insert correct state & capacity.")
+
   return output_json
 
 
