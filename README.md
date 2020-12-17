@@ -1,6 +1,7 @@
 <h2>Energy API Challenge</h2>
 
 <h3>Introduction</h3>
+
 * Develop a read-only web API which provides specific energy yields (kWh/kWp/year) of photovoltaic systems in Germany.
 
 * Read only Web API takes the two parameters in URL, "state" and "capacity".
