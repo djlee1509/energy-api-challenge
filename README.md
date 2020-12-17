@@ -1,8 +1,7 @@
 <h2>Energy API Challenge</h2>
 
 <h3>Introduction</h3>
-* Develop a read-only web API which provides specific energy yields (kWh/kWp/year)
-of photovoltaic systems in Germany.
+* Develop a read-only web API which provides specific energy yields (kWh/kWp/year) of photovoltaic systems in Germany.
 
 * Read only Web API takes the two parameters in URL, "state" and "capacity".
 
@@ -35,9 +34,9 @@ API has been deployed to here on Heroku.
 https://germany-energy-api.herokuapp.com/
 
 <h4>Request</h4>
-```
+
 GET /api/pv_yield?state={string}&capacity={int}
-```
+
 e.g. https://germany-energy-api.herokuapp.com/api/pv_yield?state=by&capacity=10
 
 <h4>Response</h4>
