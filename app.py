@@ -16,9 +16,9 @@ def get_energy_data():
   param_capacity = request.args.get("capacity")
 
   for x in data:
+    output_dict = x
     if x['state'] == param_state:
-      x['yield'] = x['yield'] * int(param_capacity)
-      output_dict = x
+      output_dict['yield'] = x['yield'] * int(param_capacity)
       output_json = json.dumps(output_dict)
       break
 
